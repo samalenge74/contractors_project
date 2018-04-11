@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Vibur);
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    background: #EEEEEE;
+}
+
+h1{
+    color: ##505050;
+    text-align: center;
+    font-family: Arial;
+    font-size: 32px;
+}
+
+legend {
+    color : green;
+}
+
+h2{
+    color: ##505050;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    margin-top: 1px;
+
+}
+
+.print_icon{
+    font-size: 30px;
+}
+
+.body-box p{
+	color: red;
+	font-size: 10px;
+}
+
+h5{
+    color: ##505050;
+    text-align: left;
+    font-family: Arial;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
+
+p.error {
+    color: #fff;
+    font-size: 10px;
+}
+
+
+.login-form {
+    width: 350px;
+    padding: 40px 30px;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.ft {
+    max-height: 50px;
+    padding: 0px !important;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 5px 7px 5px 15px;
+    background: #fff;
+    color: ##202020;
+    border: 2px solid #8cc63e;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.form-control:focus,
+.form-control:focus + .fa {
+    border-color: #8CC63E;
+    color: #0c0c0c;
+}
+
+.form-group .fa {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #999;
+}
+
+.log-status.wrong-entry {
+    -moz-animation: wrong-log 0.3s;
+    -webkit-animation: wrong-log 0.3s;
+    animation: wrong-log 0.3s;
+}
+
+.log-status.wrong-entry .form-control,
+.wrong-entry .form-control + .fa {
+    border-color: #ed1c24;
+    color: #ed1c24;
+}
+
+.log-btn{
+    background: #8CC63E;
+    dispaly: inline-block;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.btn-buttons{
+    background: #8CC63E;;
+    font-size:12px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.link {
+    text-decoration: none;
+    color: #C6C6C6;
+    float: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.link-reg {
+    text-decoration: none;
+    color: #C6C6C6;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #8C918F;
+}
+
+.alert {
+    display: none;
+    font-size: 12px;
+    color: #f00;
+    float: left;
+}
+
+.main-sidebar{
+    padding-top: 85px;
+
+}
+@media only screen and (max-width: 500px){
+    .content-header{
+        padding-top:150px;
+    }
+
+    .container-header{
+        width: 2016px !important;
+    }
+
+
+
+   .graph-size{
+        width:100%;
+        height:450px;
+    }
+
+    .table-width{
+        width:100%;
+    }
+}
+
+.userNameLeft{
+        margin-right: -430px;
+    }
+
+
+
+.sidebar-menu > li.active > a {
+    color: #fff;
+    background: #a9acad;
+    border-left-color: #3e3e3e;
+}
+
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-top: 85px;
+}
+
+.sub-panel {
+    margin-bottom: 1px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-top: 10px;
+}
+
+.panel-sub-heading{
+    height:40px;
+ margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.panel-sub-boxes{
+    height:150px;
+
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 123px;
+    margin-left: 630px;
+    margin-right: 495px;
+    overflow: hidden;
+    background-color: #d5a272;
+    height: 35px;
+}
+
+
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 0;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 12px;
+
+}
+
+#cover {
+    background: url("http://www.aveva.com/Images/ajax-loader.gif") no-repeat scroll center center #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+@-moz-keyframes wrong-log {
+    0%,
+    100% {
+        left: 0px;
+    }
+    20%,
+    60% {
+        left: 15px;
+    }
+    40%,
+    80% {
+        left: -15px;
+    }
+}
+
+@-webkit-keyframes wrong-log {
+    0%,
+    100% {
+        left: 0px;
+    }
+    20%,
+    60% {
+        left: 15px;
+    }
+    40%,
+    80% {
+        left: -15px;
+    }
+}
+
+@keyframes wrong-log {
+    0%,
+    100% {
+        left: 0px;
+    }
+    20%,
+    60% {
+        left: 15px;
+    }
+    40%,
+    80% {
+        left: -15px;
+    }
+}
+
+/* for width of the columns in the logdowntimes */
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
